@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="scroll-smooth
+    bg-no-repeat bg-cover bg-center 
+    bg-[url('../src/images/bg-mobile.png')]
+    lg:bg-[url('../src/images/bg-large.png')]
+">
+  <head>
+    <title>HUB3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./src/styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <nav class="w-full px-4 py-6 lg:px-14 xl:px-32 max-w-screen fixed z-20 inset-x-0 top-0 flex justify-between items-center">
+
+        <a href="#"> <img src="./src/images/hub3-logo.png" class="w-8" /></a>
+
+        <button id="mobileMenuButton" class="p-3 focus:outline-none lg:hidden" title="Open side menu">
+            <svg id="mobileMenuButtonClose" class="w-10 h-10 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            <svg id="mobileMenuButtonOpen" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div id="sideMenuHideOnMobile" class="bg-transparent z-20 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+                                              w-full lg:hidden
+                                              px-4  
+                                              flex-col justify-start items-center lg:flex-row lg:justify-around
+                                              -translate-y-full lg:translate-y-0">
+            
+                <a href="#about-us" class="navlink bg-white border-2 hover:bg-grassgreen border-black border-r-none text-center 
+                py-10 px-40 md:px-96 
+                text-base text-black hover:text-white uppercase">about</a>
+                <a href="#newsletter" class="navlink bg-white border-2  hover:bg-grassgreen border-black text-center 
+                py-10 px-28 md:px-80 
+                text-base text-black hover:text-white uppercase">newsletter</a>
+                <a href="#podcasts" class="navlink bg-white border-2  hover:bg-grassgreen border-black text-center 
+                py-10 px-36 md:px-80 
+                text-base text-black hover:text-white uppercase">podcast</a>
+                <a href="#availability" class="navlink bg-white  hover:bg-grassgreen border-2 border-black text-center 
+                py-10 px-28 md:px-80 
+                text-base text-black hover:text-white uppercase">availability</a>
+                <a href="mailto:" class=" navlink bg-grassgreen hover:bg-white border-2 border-black text-center 
+                py-10 px-36 md:px-80 
+                text-base text-white hover:text-black uppercase">write to us</a>
+        </div>
+        <div  class="bg-transparent hidden lg:flex absolute top-0 right-0
+                    lg:w-auto
+                    lg:h-auto
+                    lg:px-12 lg:py-6
+                    justify-around items-center
+                    lg:flex-row">>
+            <a href="#about-us" >
+                <button class="bg-white  hover:bg-grassgreen border-2 border-black border-r-none text-center 
+                py-2 px-12 text-tiny xl:text-xs text-black hover:text-white uppercase">about</button></a>
+            <a href="#newsletter" >
+                <button class="bg-white  hover:bg-grassgreen border-2 border-black text-center
+                 py-2 px-12 text-tiny xl:text-xs text-black hover:text-white uppercase">newsletter</button></a>
+            <a href="#podcasts">
+                <button class="bg-white hover:bg-grassgreen border-2 border-black text-center
+                 py-2 px-12 text-tiny xl:text-xs text-black hover:text-white uppercase">podcast</button></a>
+            <a href="#availability" >
+                <button class="bg-white hover:bg-grassgreen border-2 border-black text-center 
+                py-2 px-12 text-tiny xl:text-xs text-black hover:text-white uppercase">availability</button></a>
+            <a href="mailto:" >
+                <button class="bg-grassgreen hover:bg-white border-2 border-black text-center 
+                py-2 px-12 text-tiny xl:text-xs text-white hover:text-black uppercase">write to us</button></a>
+        </div>
+    </nav>
+
+    <section id="hero" class="px-4 pb-16 pt-28 lg:pt-56 lg:px-14 xl:px-32 lg:pb-20 relative h-screen 2xl:h-auto">
+        <div class="flex flex-col items-start">
+            <h1 class="text-lg lg:text-xl 2xl:text-2xl text-left leading-none text-white font-sans">We Make Blocks <br>Grow on <br>Trees</h1>
+            <button class="bg-grassgreen hover:bg-white hover:text-black border-2 border-black text-center py-2 px-6 text-tiny md:text-xs mt-8 shadow-black shadow-sm text-white">Hit us Up</button>
+        </div>
+    </section>
+
+    <section id="about-us" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-20">
+        <div class="bg-darkgreen relative border-4 border-black rounded-custom 2xl:py-32" style="box-shadow: rgba(0, 0, 0, 0.5) 25px 20px;">
+            <img src="./src/images/Moon.png" class="w-80 absolute -top-14" />
+            <div class="flex flex-col justify-around items-center pt-32 text-white">
+                <h1 class="text-tiny md:text-xs font-light pt-32 xl:pt-0">GROW. EVOLVE. GO TO THE MOON.</h1>
+                <p class="text-md md:text-lg 2xl:text-xl leading-none py-5 2xl:py-12">The ONLY office <br>space YOU need.</p>
+                <p class="text-tiny md:text-xs text-center lg:w-3/4 2xl:w-2/3 2xl:py-20 font-light">Our office space is tailored for multiple blockchain-based companies with top-notch security and facilities. Flexible workstations, meeting rooms, and communal areas facilitate collaboration and networking. Join us in a community of decentralized tech disruptors.</p>
+                <div class="flex flex-col lg:flex-row justify-around items-center py-20 px-10">
+                    <div class="flex flex-col justify-around items-center">
+                        <img src="./src/images/accsblty.png" class="md:w-1/2" />
+                        <p class="text-md xl:text-lg">Community.</p>
+                        <p class="text-tiny md:text-xs text-center w-2/3 lg:w-3/4 font-light">Encourages collaboration, creativity, and networking among like-minded professionals, providing an environment where individuals can share ideas, resources, and opportunities to foster personal and professional growth.</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-12 lg:pt-0">
+                        <img src="./src/images/cmnty.png" class="md:w-1/2" />
+                        <p class="text-md xl:text-lg">Accesibility.</p>
+                        <p class="text-tiny md:text-xs text-center w-2/3 lg:w-3/4 font-light">Easy access to transportation, ample parking, reliable technology  with strong security measures creates a safe and convenient environment for professionals to work and collaborate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="podcasts" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-20">
+        <div class="flex flex-col items-start relative">
+            <h1 class="text-md md:text-lg xl:text-xl 2xl:text-2xl text-left leading-none text-white font-sans">Podcasts <br>Coming <br>Soon</h1>
+            <button class="bg-grassgreen hover:bg-white hover:text-black border-2 border-black text-center py-2 px-6 text-tiny md:text-xs shadow-black shadow-sm text-white mt-8">Notify Me!</button>
+            <img src="./src/images/asfa.png" class="absolute -top-52 -right-44 z-10 md:w-3/4 xl:w-1/2 lg:-right-52 2xl:-top-72" />
+        </div>
+    </section>
+
+    <section id="newsletter" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-10 lg:pb-20">
+        <div class="bg-darkgreen relative border-4 border-black rounded-custom 2xl:py-32" style="box-shadow: rgba(0, 0, 0, 0.5) 25px 20px;">
+            <div class="flex flex-col justify-around items-center pt-32 text-white bg-cover bg-no-repeat bg-[url('./src/images/bg-nlt.png')]">
+                <h1 class="text-tiny md:text-xs font-light lg:pt-20 xl:pt-0">NEWSLETTER.</h1>
+                <p class="text-md md:text-lg 2xl:text-xl py-5 text-center leading-none">Unleash the Power <br>of WEB3</p>
+                <p class="text-tiny md:text-xs text-center w-1/2 font-light">Get to know what are the active topics in the Crypto space, how and why they are made and what can we do to upgrade them and make them better.</p>
+                <button class="bg-grassgreen hover:bg-white hover:text-black border-2 border-black text-center py-2 px-6 text-tiny md:text-xs shadow-black shadow-sm text-white mt-8">Sign Up</button>
+            </div>
+            <h1 class="text-md md:text-lg xl:text-xl 2xl:text-xl py-12 lg:pt-28 text-center leading-none text-white font-sans">Proud members</h1>
+            <div class="flex flex-row justify-around items-center flex-wrap px-12 pb-20">
+                <img src="./src//images/near-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/Hrdalo-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/taxtris-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/calimero-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/rzlt-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/aimages-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/4pto-logo.png" class="w-1/2 lg:w-1/3" /> 
+                <img src="./src/images/drugakozmicka-logo.png" class="w-1/2 lg:w-1/3" /> 
+            </div>
+        </div>
+    </section>
+
+    <section id="availability" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-20" >
+        <div class="bg-darkgreen relative border-4 border-black rounded-custom" style="box-shadow: rgba(0, 0, 0, 0.5) 25px 20px;">
+            <div class="flex flex-row justify-between items-center pt-12 lg:pt-24 text-white px-4 lg:px-20">
+                <p class="text-md md:text-lg 2xl:text-xl pb-5 text-center">Availability.</p>
+                <p class="text-tiny md:text-xs text-center lg:mr-16 xl:mr-4 2xl:mr-24 font-light">95% full</p>           
+            </div>
+            <img src="./src/images/capacity.png" class="mx-auto pb-20 w-6/7 2xl:w-full xl:px-20"  />
+        </div>
+    </section>
+
+    <section id="contact" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-20">
+        <div class="bg-darkgreen relative border-4 border-black rounded-custom pb-20" style="box-shadow: rgba(0, 0, 0, 0.5) 25px 20px;">
+            <p class="text-md md:text-lg 2xl:text-xl py-5 text-white text-left pt-12 lg:pt-24 pl-4 lg:pl-20">Get in touch.</p>
+            <form class="w-full px-4 lg:px-20">
+                <div class="mb-12">
+                  <input class="border-2 border-black rounded-form
+                   w-full py-3 px-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                   id="name" 
+                   type="text" 
+                   placeholder="Name">
+                </div>
+                <div class="mb-12">
+                  <input class="border-2 border-black rounded-form
+                  w-full py-3 px-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                  id="email" 
+                  type="email" 
+                  placeholder="Mail">
+                </div>
+                <div class="mb-12">
+                  <textarea class="border-2 border-black rounded-form
+                  w-full py-3 px-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                  id="message" 
+                  rows="12" 
+                  placeholder="Message"></textarea>
+                </div>
+                <div class="flex justify-center">
+                  <button class="bg-grassgreen hover:bg-white hover:text-black border-2 border-black text-center py-2 px-6 text-tiny md:text-xs shadow-black shadow-sm text-white" 
+                  type="submit">
+                    Get in Touch
+                  </button>
+                </div>
+              </form>            
+        </div>
+    </section>
+  </body>
+
+  <script>
+    var mobileMenuButton = document.getElementById("mobileMenuButton");
+    mobileMenuButton.onclick = function() {
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("shadow");
+            document.getElementById("mobileMenuButtonClose").classList.toggle("hidden");
+            document.getElementById("mobileMenuButtonOpen").classList.toggle("hidden");
+        }
+        // Hide element when click outside nav
+    var theElementContainer = document.getElementsByTagName("nav")[0];
+    document.addEventListener('click', function(event) {
+        if (!theElementContainer.contains(event.target)) {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        }
+    
+    });
+
+    var menuLinks = document.querySelectorAll("a.navlink");
+    menuLinks.forEach((e, i) => {
+        e.addEventListener('click', () => {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        });
+    });
+
+</script>
+
+</html>
