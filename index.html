@@ -18,8 +18,7 @@
   </head>
   <body>
 
-    <!-- HEADER -->
-    <nav class="w-full px-4 py-6 lg:px-14 xl:px-32 max-w-screen fixed z-20 inset-x-0 top-0 flex justify-between items-center">
+    <nav class="w-full bg-transparent px-4 py-6 lg:px-14 xl:px-32 max-w-screen fixed z-20 inset-x-0 top-0 flex justify-between items-center">
 
         <a href="#"> <img src="./src/images/hub3-logo.png" class="w-8" /></a>
 
@@ -34,24 +33,24 @@
         <div id="sideMenuHideOnMobile" class="bg-transparent z-20 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
                                               w-full lg:hidden
                                               px-4  
-                                              flex-col justify-start items-center lg:flex-row lg:justify-around
+                                              flex-col justify-start items-start
                                               -translate-y-full lg:translate-y-0">
             
                 <a href="#about-us" class="navlink bg-white border-2 hover:bg-grassgreen border-black border-r-none text-center 
-                py-10 px-40 md:px-96 
-                text-base text-black hover:text-white uppercase">about</a>
+                py-4 px-12
+                text-sm text-black hover:text-white uppercase">about</a>
                 <a href="#newsletter" class="navlink bg-white border-2  hover:bg-grassgreen border-black text-center 
-                py-10 px-28 md:px-80 
-                text-base text-black hover:text-white uppercase">newsletter</a>
+                py-4 px-12  
+                text-sm text-black hover:text-white uppercase">newsletter</a>
                 <a href="#podcasts" class="navlink bg-white border-2  hover:bg-grassgreen border-black text-center 
-                py-10 px-36 md:px-80 
-                text-base text-black hover:text-white uppercase">podcast</a>
+                py-4 px-12  
+                text-sm text-black hover:text-white uppercase">podcast</a>
                 <a href="#availability" class="navlink bg-white  hover:bg-grassgreen border-2 border-black text-center 
-                py-10 px-28 md:px-80 
-                text-base text-black hover:text-white uppercase">availability</a>
+                py-4 px-12  
+                text-sm text-black hover:text-white uppercase">availability</a>
                 <a href="mailto:" class=" navlink bg-grassgreen hover:bg-white border-2 border-black text-center 
-                py-10 px-36 md:px-80 
-                text-base text-white hover:text-black uppercase">write to us</a>
+                py-4 px-12  
+                text-sm text-white hover:text-black uppercase">write to us</a>
         </div>
         <div  class="bg-transparent hidden lg:flex absolute top-0 right-0
                     lg:w-auto
@@ -91,7 +90,7 @@
                 <h1 class="text-tiny md:text-xs font-light pt-32 xl:pt-0">GROW. EVOLVE. GO TO THE MOON.</h1>
                 <p class="text-md md:text-lg 2xl:text-xl leading-none py-5 2xl:py-12">The ONLY office <br>space YOU need.</p>
                 <p class="text-tiny md:text-xs text-center lg:w-3/4 2xl:w-2/3 2xl:py-20 font-light">Our office space is tailored for multiple blockchain-based companies with top-notch security and facilities. Flexible workstations, meeting rooms, and communal areas facilitate collaboration and networking. Join us in a community of decentralized tech disruptors.</p>
-                <div class="flex flex-col lg:flex-row justify-around items-center py-20 px-10">
+                <div class="flex flex-col lg:flex-row justify-around items-center lg:items-end py-20 px-10">
                     <div class="flex flex-col justify-around items-center">
                         <img src="./src/images/accsblty.png" class="md:w-1/2" />
                         <p class="text-md xl:text-lg">Community.</p>
@@ -150,7 +149,7 @@
     <section id="contact" class="px-4 py-16 lg:px-14 xl:px-32 lg:py-20">
         <div class="bg-darkgreen relative border-4 border-black rounded-custom pb-20" style="box-shadow: rgba(0, 0, 0, 0.5) 25px 20px;">
             <p class="text-md md:text-lg 2xl:text-xl py-5 text-white text-left pt-12 lg:pt-24 pl-4 lg:pl-20">Get in touch.</p>
-            <form class="w-full px-4 lg:px-20">
+            <form class="w-full px-4 lg:px-20" name="contact" method="POST" data-netlify="true">
                 <div class="mb-12">
                   <input class="border-2 border-black rounded-form
                    w-full py-3 px-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
