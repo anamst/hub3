@@ -22,15 +22,15 @@
 
         <a href="#"> <img src="./src/images/hub3-logo.png" class="w-8" /></a>
 
-        <button id="mobileMenuButton" class="p-3 focus:outline-none lg:hidden" title="Open side menu">
+        <button id="mobileMenuButton" class="p-3 focus:outline-none lg:hidden z-30" title="Open side menu">
             <svg id="mobileMenuButtonClose" class="w-10 h-10 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
             <svg id="mobileMenuButtonOpen" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
-
-        <div id="sideMenuHideOnMobile" class="bg-transparent z-20 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+<!--
+        <div id="sideMenuHideOnMobile" class="bg-black z-20 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
                                               w-full lg:hidden
                                               px-4  
                                               flex-col justify-start items-start
@@ -51,7 +51,30 @@
                 <a href="mailto:" class=" navlink bg-grassgreen hover:bg-white border-2 border-black text-center 
                 py-4 px-12  
                 text-sm text-white hover:text-black uppercase">write to us</a>
+        </div> -->
+        <div id="sideMenuHideOnMobile" class="bg-black z-20 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+                                              w-full lg:hidden
+                                              px-4 py-44 
+                                              flex-col justify-start items-center
+                                              -translate-y-full lg:translate-y-0">
+            
+                <a href="#about-us" class="navlink  text-center 
+                py-4 px-12
+                text-sm text-white hover:text-grassgreen uppercase">about</a>
+                <a href="#newsletter" class="navlink text-center 
+                py-4 px-12
+                text-sm text-white hover:text-grassgreen  uppercase">newsletter</a>
+                <a href="#podcasts" class="navlink text-center 
+                py-4 px-12
+                text-sm text-white hover:text-grassgreen uppercase">podcast</a>
+                <a href="#availability" class="navlink text-center 
+                py-4 px-12
+                text-sm text-white hover:text-grassgreen uppercase">availability</a>
+                <a href="mailto:" class=" navlink text-center 
+                py-4 px-12
+                text-sm text-white hover:text-grassgreen uppercase">write to us</a>
         </div>
+
         <div  class="bg-transparent hidden lg:flex absolute top-0 right-0
                     lg:w-auto
                     lg:h-auto
@@ -186,7 +209,6 @@
     var mobileMenuButton = document.getElementById("mobileMenuButton");
     mobileMenuButton.onclick = function() {
             document.getElementById("sideMenuHideOnMobile").classList.toggle("-translate-y-full");
-            document.getElementById("sideMenuHideOnMobile").classList.toggle("mt-24");
             document.getElementById("sideMenuHideOnMobile").classList.toggle("shadow");
             document.getElementById("mobileMenuButtonClose").classList.toggle("hidden");
             document.getElementById("mobileMenuButtonOpen").classList.toggle("hidden");
@@ -196,7 +218,6 @@
     document.addEventListener('click', function(event) {
         if (!theElementContainer.contains(event.target)) {
             document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
-            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
             document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
             document.getElementById("sideMenuHideOnMobile").classList.remove("hidden");
             document.getElementById("mobileMenuButtonClose").classList.add("hidden");
@@ -208,7 +229,6 @@
     menuLinks.forEach((e, i) => {
         e.addEventListener('click', () => {
             document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
-            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
             document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
             document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
             document.getElementById("mobileMenuButtonClose").classList.add("hidden");
